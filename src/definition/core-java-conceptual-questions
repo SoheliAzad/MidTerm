@@ -6,7 +6,15 @@ from the computer as per the user need. For an example, Java is a programming la
 
 
 What jdk contains or composed of and define each components?
-A.
+A. Java Development kit (JDK) is a software development environment and is used to run Java applications in it.
+Along with few other things, mainly it consist of the following:
+
+Java Runtime Environment (JRE): Set of software tools to develop java application
+Java Interpreter and loader: It interpretes and translates computer language (bytecode) into human readable langauge
+Java Compiler (Javac):it creates bytecode for the Java Virtual Machine (JVM)
+Java Archive (JAR): it is pacakged into Zip files to use many files aggregating into one
+Java Documentation Generator (Javadoc): documentation generator for generating API documentation in HTML format
+
 
 What is IDE?
 A. IDE is Integrated Development Environment. It is a software application used for software developement.
@@ -15,38 +23,151 @@ A. IDE is Integrated Development Environment. It is a software application used 
 What are the IDEs available in the market to support java?
 A. There are quite a few number of IDEs available to support java, like Eclipse, Intellij, NetBeans, blueJ etc.
 
-Explain the entire java life cycle.
+
+Explain the entire java lifecycle.
+A. The java life cycle starts from code/text editor and goes to java compiler. Java compiler compiles the codes
+ into bytecode. Bytecodes are processed into the JVM through class loader and interpreter and with the help of
+ JRE (Java Runtime Environment). Finally it used by dirfferent operating systems.
 
 what is class?
+A. Class is a blueprint from which an object is created. The structure of Class is:
+[access specifier] [Class keyword] [class name]{
+constructor
+variables
+methods
+}
 
 
 What is object?
+A. Object is the instances/mirror image of class.
+
 
 What is the entry point of an application?
+A. 'Main' method (public static void main(String[]args) is the entry point of any application in java.
+
+
 Why main is static?
+A. As main the entry point of any java application, it is static to execute the first command in any given point of time.
+
+
 Which class is the superclass of all classes?
+A. Object class is the superclass of all classes in java.
+
+
 What is difference between path and classpath variables?
+A. Path: Environment variable for the operating system to implement executables.
+Class path: Environment variable to find path of class. It is used by Java compiler.
+
+
 What is the difference between an Interface and Abstract class?
+A. Interface Class: only method can be declared without any method body
+   Abstract Class: Non abstract method can be implemented and abstract method can be declared.
+
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. No object can be made from an Interface and Abstract class. They can be used in a full fledged class with
+'extend' keyword.
+
+
 what is Access Specifier?
+A. Access Specifier, as its name suggests, specifies who should have access to that particular class.
+In a class with 'public' keyword as access speficier, all have access to that class.
+'Private' and 'protected' class are not accessed by all but can be accessed from within that particular class only.
+
+
 What is OOP ? Define each feature of java OOP.
+A. OOP is Object Oriented Programming. It is based on object and data. There are four types of OOP as follows:
+Abstraction: Implementation hiding. It is implemented with the help of class, objects and variables from other class.
+
+Encapsulation: data hiding. It reduces the functionality without compromising the security by using getter and setter
+methods from a private class.
+
+Inheritance: allows classes to adopt/get the properties of another class by using 'extend' keyword. The original class is called Parent class
+and the class that uses the properties of another class is called sub/child class.
+
+Polymorphism: An object taking on many forms. It adovocates the fact that a class can extend more than one class at a time.
+Method overriding and method overloading are examples of polymorphism.
+
+
 What is Java Package and which package is imported by default?
+A. Java package is the grouping of classes, interfaces, enum etc that provide access and name space management.
+Java.lang.package is the default package.
+
+
 What is API? Name list of API that you have used so far.
+A. API is Application Programming Interface. We have used java API like import.java.util.scanner, import.java.util etc.
+
+
 Does java support multiple inheritance, explain why or why not?
+A. Java does not support multiple inheritance. Because it leads to ambiguity and confusions.
+
+
 What is method overloading and when it happens?
+A. Method overloading allows a class to have more than one methods having the same name.
+
+
 Explain exceptions in java and how to handle it.
+A. Exceptions are error or roadblocks that appear during program run time. It is ususally handle with 'try' and 'catch'
+ method.
+ Structure of the method:
+ try{
+
+
+ } catch (Exception Name e1){
+//catch block
+ }
+
+
 What is static keyword in java? How it has been used in variables and methods ?
+A.
+
+
+
 What is final and how it has been used variables and methods?
+
+
 What is final, finally and finalize?
+
+
 What is a constructor ?
+A. Constructor is a special method to initialize an object. It usually has the same name as Class name.
+Structure of constructor:
+[access specifier] [same name as lcass name](){
+
+}
+
 Can we have multiple constructors in a class?
+A. Yes we can have multiple constructors in a class.
+
+
 If we don't have a constructor declared, what is called during the object creation?
+A. Default constructor is called during object creation, if no constructor is declared.
+
+
 What is "this" keyword in java ?
+A. 'This' keyword is a referencne variable to refer current object. It is used to refer instance variable,
+invoke constructor etc.
+
+
 What is "super" keyword in java? How many possible way can you use?
+
+
 What is JVM stand for ?
+A. JVM stands for Java Virtual Machine.
+
+
 Is JVM platform independent?
+A. Yes.
+
+
 What version of java are you using?
+A. "11.0.1"
+
+
 What is JAR stand for ?
+A. JAR is Java Archive.
+
+
 What is the difference between JDK and JVM?
 What is the difference between JVM and JRE?
 What is compile time and run time?
