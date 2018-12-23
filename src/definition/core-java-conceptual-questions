@@ -7,12 +7,21 @@ from the computer as per the user need. For an example, Java is a programming la
 
 What jdk contains or composed of and define each components?
 A.
+
 What is IDE?
-A.
+A. IDE is Integrated Development Environment. It is a software application used for software developement.
+
+
 What are the IDEs available in the market to support java?
+A. There are quite a few number of IDEs available to support java, like Eclipse, Intellij, NetBeans, blueJ etc.
+
 Explain the entire java life cycle.
+
 what is class?
+
+
 What is object?
+
 What is the entry point of an application?
 Why main is static?
 Which class is the superclass of all classes?
