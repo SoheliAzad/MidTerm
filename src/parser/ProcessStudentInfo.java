@@ -59,23 +59,48 @@ public class ProcessStudentInfo {
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
-				
+				qtpStudents = xmlReader.parseData(tag, pathQtp);
 				//add Selenium ArrayList data into map.
+				list.put("selenium", seleniumStudents);
+
 
 				//add Qtp ArrayList data into map.
-		
+				list.put("qtp", qtpStudents);
 		      	
 				//Retrieve map data and display output.
+				for (Map.Entry <String,List<Student>> print : list.entrySet()){
+
+					List<Student> studentList=(List<Student>) list.get(print.getKey());
+
+					System.out.println("\nPortfolio of Student of "+print.getKey()+"classes :\n");
+
+					for (Student studentprofile:studentList) {
+
+						int id=studentprofile.getId();
+
+						String firstname=studentprofile.getFirstName();
+
+						String lastname=studentprofile.getLastName();
+
+						int grade=studentprofile.getScore();
+
+						System.out.println("Student (id="+id+")"+firstname +" "+lastname+" "+"Grade="+grade);
+
+					}
+
+				}
+
 
 
 
 				//Store Qtp data into Qtp table in Database
-				connectToMongoDB.insertIntoMongoDB(seleniumStudents,"qtp");
+				connectToMongoDB.insertIntoMongoDB(qtpStudents,"qtp");
 				//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
 				//Store Selenium data into Selenium table in Database
-
+				connectToMongoDB.insertIntoMongoDB(seleniumStudents,"selenium");
 				//Retrieve Qtp students from Database
+
                List<Student> stList = connectToMongoDB.readStudentListFromMongoDB("qtp");
                for(Student st:stList){
                	  System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
@@ -83,7 +108,10 @@ public class ProcessStudentInfo {
 
 			   //Retrieve Selenium students from Database
 
-
+				List<Student> stlist1 = connectToMongoDB.readStudentListFromMongoDB("selenium");
+				for(Student st:stlist1){
+					System.out.println(st.getFirstName()+" "+st.getLastName()+" "+st.getScore()+" "+st.getId());
+				}
 			}
 
 }

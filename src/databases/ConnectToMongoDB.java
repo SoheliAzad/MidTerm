@@ -87,9 +87,9 @@ public class ConnectToMongoDB {
             student.setFirstName(firstName);
             String lastName = (String)doc.get("lastName");
             student.setLastName(lastName);
-            String score = (String)doc.get("score");
+            int score = (int)doc.get("score");
             student.setScore(score);
-            String id = (String) doc.get("id");
+            int id = (int) doc.get("id");
             student.setId(id);
             student = new Student(student.getFirstName(),student.getLastName(),student.getScore(),student.getId());
             list.add(student);
@@ -98,7 +98,7 @@ public class ConnectToMongoDB {
     }
 
     public static void main(String[] args){
-        insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
+        insertIntoToMongoDB(new User("Soheli Azad", "5000","07-1973"));
         List<User> user = readUserProfileFromMongoDB();
         for(User person:user){
             System.out.println(person.getStName()+ " "+ person.getStID());

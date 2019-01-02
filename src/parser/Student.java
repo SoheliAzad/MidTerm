@@ -9,16 +9,17 @@ public class Student implements Serializable {
 	 */
 	public String firstName;
 	public String lastName;
-	public String score;
-	public String id;
+	public int score;
+	public int id;
 
 	public Student(){}
 
-	public Student(String firstName, String lastName, String score, String id) {
+	public Student(String firstName, String lastName, int score, int id) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.score = score;
 		this.id = id;
+
 	}
 	public String getFirstName() {
 		return firstName;
@@ -36,19 +37,19 @@ public class Student implements Serializable {
 		this.lastName = lastName;
 	}
 
-	public String getScore() {
+	public int getScore() {
 		return score;
 	}
 
-	public void setScore(String score) {
+	public void setScore(int score) {
 		this.score = score;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
