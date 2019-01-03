@@ -1,0 +1,29 @@
+
+Total Execution Time of 100 numbers in Selection Sort take: 0 milli sec
+Total Execution Time of 100 numbers in Insertion Sort take: 0 milli sec
+Total Execution Time of 100 numbers in Bubble Sort take: 1 milli sec
+Total Execution Time of 100 numbers in Merge Sort take: 0 milli sec
+Total Execution Time of 100 numbers in Quick Sort take: 1 milli sec
+Total Execution Time of 100 numbers in Heap Sort take: 0 milli sec
+Total Execution Time of 100 numbers in Bucket Sort take: 0 milli sec
+
+
+
+Total Execution Time of 10000 numbers in Selection Sort take: 43 milli sec
+Total Execution Time of 10000 numbers in Insertion Sort take: 57 milli sec
+Total Execution Time of 10000 numbers in Bubble Sort take: 155 milli sec
+Total Execution Time of 10000 numbers in Merge Sort take: 5 milli sec
+Total Execution Time of 10000 numbers in Quick Sort take: 2 milli sec
+Total Execution Time of 10000 numbers in Heap Sort take: 1 milli sec
+Total Execution Time of 10000 numbers in Bucket Sort take: 1 milli sec
+
+
+
+
+Total Execution Time of 100000 numbers in Selection Sort take: 3753 milli sec
+Total Execution Time of 100000 numbers in Insertion Sort take: 5714 milli sec
+Total Execution Time of 100000 numbers in Bubble Sort take: 20358 milli sec
+Total Execution Time of 100000 numbers in Merge Sort take: 29 milli sec
+Total Execution Time of 100000 numbers in Quick Sort take: 20 milli sec
+Total Execution Time of 100000 numbers in Heap Sort take: 13 milli sec
+Total Execution Time of 100000 numbers in Bucket Sort take: 3 milli sec
