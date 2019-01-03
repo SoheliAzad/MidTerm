@@ -144,7 +144,7 @@ A. Constructor is a special method to initialize an object. It usually has the s
 
 
 Structure of constructor:
-[access specifier] [same name as lcass name](){
+[access specifier] [same name as class name](){
 
 }
 
@@ -252,7 +252,8 @@ A. Constructor chaining is the process of calling one constructor from another c
 
 
 The difference between Serial and Parallel Garbage Collector?
-A.
+A.The serial collector is mainly designed for single-threaded environments and for small heaps.
+  Parallel Garbege Collector is used for multi-threaded environments
 
 
 What is JIT stands for?
@@ -301,7 +302,7 @@ A. jUnit and testNG differs in their scope. TestNG is more suitable for complex 
 in test driven development.
 
 What are the dependencies for this project?
-A.
+A. TestNG, jUnit and Maven.
 
 
 what is dependency injection in java?
