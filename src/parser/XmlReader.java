@@ -32,7 +32,7 @@ public class XmlReader {
 		Node node = nodeList.item(i);
 		if(node instanceof Element){
 			Student student = new Student();
-			student.id = Integer.parseInt(node.getAttributes().getNamedItem(tagName).getNodeValue());
+			student.id = node.getAttributes().getNamedItem(tagName).getNodeValue();
 			NodeList childNodes = node.getChildNodes();
 			for(int j=0;j<childNodes.getLength();j++){
 				Node cNode = childNodes.item(j);
@@ -47,11 +47,11 @@ public class XmlReader {
 						student.lastName = content;
 						break;
 					case "score":
-						student.score = Integer.parseInt(content);
+						student.score = convertIntToChar(content);
 						break;
 
 						case "id":
-						student.id = Integer.parseInt(content);
+						student.id = convertIntToChar(content);
 						break;}
 				}
 			}

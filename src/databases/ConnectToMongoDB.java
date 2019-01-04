@@ -87,9 +87,9 @@ public class ConnectToMongoDB {
             student.setFirstName(firstName);
             String lastName = (String)doc.get("lastName");
             student.setLastName(lastName);
-            int score = (int)doc.get("score");
+            String score = (String)doc.get("score");
             student.setScore(score);
-            int id = (int) doc.get("id");
+            String id = (String) doc.get("id");
             student.setId(id);
             student = new Student(student.getFirstName(),student.getLastName(),student.getScore(),student.getId());
             list.add(student);
